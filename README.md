@@ -22,3 +22,17 @@
     # edit timeTracker/settings.py and change ALLOWED_HOSTS
     ./manage.py runserver $IP:$PORT
     firefox https://form-qr-sdoro.c9users.io/
+
+### create the pucher app
+
+    ./manage.py startapp puncher
+    # edit timeTracker/url.py
+    > puncher/url.py
+    # edit puncher/url.py
+    mkdir -p puncher/templates/puncher
+    > puncher/templates/puncher/index.html
+    mkdir -p puncher/static/puncher/images
+    # edit puncher/templates/puncher/index.html
+    # edit puncher/settings.py
+    # edit puncher/views.py
+    # firefox https://form-qr-sdoro.c9users.io/puncher/

@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [u'form-qr-sdoro.c9users.io']
 # Application definition
 
 INSTALLED_APPS = [
+    'puncher.apps.PuncherConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
