@@ -23,7 +23,7 @@
     ./manage.py runserver $IP:$PORT
     firefox https://form-qr-sdoro.c9users.io/
 
-### create the pucher app
+### create the puncher app
 
     ./manage.py startapp puncher
     # edit timeTracker/url.py
@@ -36,3 +36,14 @@
     # edit puncher/settings.py
     # edit puncher/views.py
     # firefox https://form-qr-sdoro.c9users.io/puncher/
+
+### setup database and create table
+
+    # edit polls/models.py
+    ./manage.py makemigrations puncher
+    ./manage.py migrate
+    ./manage.py createsuperuser
+    # Username: admin
+    # Email address: admin@example.com
+    # Password: not24get
+    # Password (again): not24get
