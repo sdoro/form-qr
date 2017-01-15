@@ -53,3 +53,17 @@
     # edit puncher/models.py
     ./manage.py makemigrations puncher
     ./manage.py migrate
+
+### write a simple forms
+    
+    > puncher/templates/puncher/punch.html
+    # edit puncher/templates/puncher/punch.html
+    > puncher/templates/puncher/accepted.html
+    # edit puncher/templates/puncher/accepted.html
+    # edit puncher/admin.py
+    # edit puncher/models.py
+    # timeTracker/settings.py
+    > puncher/templates/puncher/accepted.html
+    # edit puncher/templates/puncher/accepted.html
+    > puncher/templates/puncher/punch.html
+    # edit puncher/templates/puncher/punch.html

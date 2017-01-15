@@ -1,0 +1,21 @@
+<h1>{{ clocking.punch_id }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'puncher:punch' clocking.punch_id %}" method="post">
+{% csrf_token %}
+    <ul>
+        <li>
+            <label for="checkpoint_id">Checkpoint id: </label>
+            <input id="puncher_name" type="text" name="checkpoint_name" value="{{ clocking.checkPoint_id }}">
+        </li>
+        
+        <li>
+            <label for="person_id">Person id: </label>
+            <input id="person_name" type="text" name="person_name" value="{{ clocking.person_id }}">
+        </li>
+    </ul>
+
+<input type="submit" value="Check" />
+
+</form>
