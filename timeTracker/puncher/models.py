@@ -6,7 +6,14 @@ import datetime
 
 # Create your models here.
 class clocking(models.Model):
-    id = models.AutoField(primary_key=True)
-    staff_id = models.IntegerField()
+    punch_id = models.AutoField(primary_key=True)
+    checkPoint_id = models.IntegerField()
+    person_id = models.IntegerField()
     clock_in = models.DateTimeField()
     clock_out = models.DateTimeField()
+
+class checkPoint(models.Model):
+    checkpoint_id = models.IntegerField(primary_key=True)
+
+class person(models.Model):
+    person_id = models.IntegerField(primary_key=True)

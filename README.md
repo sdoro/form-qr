@@ -39,7 +39,7 @@
 
 ### setup database and create table
 
-    # edit polls/models.py
+    # edit puncher/models.py
     ./manage.py makemigrations puncher
     ./manage.py migrate
     ./manage.py createsuperuser
@@ -47,3 +47,9 @@
     # Email address: admin@example.com
     # Password: not24get
     # Password (again): not24get
+
+### some changes to database models
+
+    # edit puncher/models.py
+    ./manage.py makemigrations puncher
+    ./manage.py migrate
